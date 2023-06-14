@@ -4,7 +4,7 @@ import { UserCreatedEvent } from '../../../domain/model/events/user-created.even
 
 @EventsHandler(UserCreatedEvent)
 export class UserCreatedHandler implements IEventHandler<UserCreatedEvent> {
-  handle(event: UserCreatedEvent): any {
+  handle(event: UserCreatedEvent): void {
     console.log('UserCreatedEvent: ${event}');
   }
 }
